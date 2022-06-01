@@ -127,13 +127,13 @@ try:
             # Check if email has been sent, continue logging if wtTime not lapsed
             dx = tx-txEmail
             if dx >= wtTime:
-                print('Temp out of regulation, seding email...')
+                print('Temp out of regulation, sending email...')
                 # send_email(tx,ty) --WIP
                 txEmail = tx
             else:
                 print('>>>>>>>Email sent>>>>>>>>')
         # Check if it is time to plot and save a figure        
-        if time.localtime().tm_min%markTa <=tm:
+        if time.localtime().tm_min%markTa <= tm:
             plot_temp(x,y,[0, 2400, 60, 100])
             csvLogFile.close()
             csvLogFile, csvLog = open_csv(time.localtime(),False)
