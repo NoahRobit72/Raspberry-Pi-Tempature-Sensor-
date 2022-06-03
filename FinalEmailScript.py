@@ -36,10 +36,11 @@ gmail_user = 'nialabtempaturesensor@gmail.com'
 gmail_password = 'NiaLab2003'
 sent_from = gmail_user
 to = ['noah.robit@gmail.com']
-currentInfo = today.strftime("%B %d") # Current month, date, and year
+
 subject = subjectString()
 bodyIntro = 'Hello Rohin, the tempature in the room is: '
 body = bodyIntro + str(tempature)
+
 email_text = """\
 From: %s
 To: %s
