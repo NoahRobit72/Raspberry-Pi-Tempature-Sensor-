@@ -50,4 +50,4 @@ Subject: %s
 """ % (sent_from, ", ".join(to), subject, body)
 
 
-sendEmail = sendEmail('nialabtempaturesensor@gmail.com','NiaLab2003','nialabtempaturesensor@gmail.com','noah.robit@gmail.com',email_text)
+sendEmail(gmail_user,gmail_password,gmail_user,to,email_text)
